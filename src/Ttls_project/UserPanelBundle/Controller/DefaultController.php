@@ -16,8 +16,9 @@ class DefaultController extends Controller
      * @Route("/read")
      * @Template()
      */
-    public function readAction($name)
+    public function readAction()
     {
-        return array('name' => $name);
+        $user = $this->container->get('security.context')->getToken()->getUser();
+        return array('user' => $user);
     }
 }
