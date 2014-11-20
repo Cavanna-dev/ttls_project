@@ -7,9 +7,13 @@ Procédure installation projet :
 
 - Créer dossier de code source "wamp/www/ttls_project"
 
-- Dans git bash - 'git clone https://github.com/KeurbyCandy/ttls_project.git'
+- Cloner le projet avec git :
+Clique droit sur le dossier créée -> 'Git Bash', 
+puis entrer dans l'invite de commande 'git clone https://github.com/KeurbyCandy/ttls_project.git'
 
-- Mettre à jour vendor : 'php composer.phar self-update' puis 'php composer.phar update'
+- Mettre à jour vendor : 
+Ligne de commande à la racine du projet
+'php composer.phar self-update' puis 'php composer.phar update'
 
 - En ligne de commande, situé dans le dossie racine du projet : php app:console doctrine:database:create
 
