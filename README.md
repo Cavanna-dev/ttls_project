@@ -15,9 +15,9 @@ puis entrer dans l'invite de commande 'git clone https://github.com/KeurbyCandy/
 Ligne de commande à la racine du projet
 'php composer.phar self-update' puis 'php composer.phar update'
 
-- En ligne de commande, situé dans le dossie racine du projet : php app:console doctrine:database:create
+- En ligne de commande, situé dans le dossie racine du projet : php app/console doctrine:database:create
 
-- En ligne de commande, situé dans le dossie racine du projet : php app:console doctrine:schema:update --force
+- En ligne de commande, situé dans le dossie racine du projet : php app/console doctrine:schema:update --force
 
 - Modifier wamp/bin\php\php5.4.12/php.ini 
 # Virtual hosts

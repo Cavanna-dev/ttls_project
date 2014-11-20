@@ -10,13 +10,23 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
     /**
      * @Template()
      */
-class DefaultController extends Controller
+class AdminController extends Controller
 {
     /**
      * @Route("/home")
      * @Template()
      */
     public function indexAction()
+    {
+        $user = $this->container->get('security.context')->getToken()->getUser();
+        return array('user' => $user);
+    }
+    
+    /**
+     * @Route("/homepage")
+     * @Template()
+     */
+    public function HomePageAction()
     {
         $user = $this->container->get('security.context')->getToken()->getUser();
         return array('user' => $user);
