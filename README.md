@@ -5,6 +5,9 @@ Procédure installation projet :
 
 - Installer Git / Wamp
 
+- Mettre le lien de PHP et de Git dans les variables d'environnement :
+'C:\wamp\bin\php\php5.4.12;C:\Program Files (x86)\Git\bin'
+
 - Créer dossier de code source "wamp/www/ttls_project"
 
 - Cloner le projet avec git :
