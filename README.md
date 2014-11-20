@@ -3,7 +3,9 @@ TTLS Standard Edition
 
 Procédure installation projet :
 
-- Créer dossier de code source
+- Installer Git / Wamp
+
+- Créer dossier de code source "wamp/www/ttls_project"
 
 - Dans git bash - 'git clone https://github.com/KeurbyCandy/ttls_project.git'
 
@@ -19,9 +21,14 @@ Include conf/extra/httpd-vhosts.conf
 
 - Créer virtual host /wamp/bin/apache\Apache2.4.4\conf
 <VirtualHost *:80>
-    ServerAdmin cavannachristophe@gmail.com
-    DocumentRoot "C:\wamp\www\ttls_project\web"
+    ServerAdmin user@domaine.com
+    DocumentRoot "C:\wamp\www\ttls_project\web" //C'est le mien pour exemple, changer le chemin pour accéder à votre wamp
     ServerName local.ttls.com
 </VirtualHost>
 
 - Importer BDD /ttls_project/docs/ttls_export.sql.gz
+
+Puis se connecter à l'adresse :
+http://local.ttls.com/app_dev.php/admin/home
+login:admin
+password:admin
